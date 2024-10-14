@@ -30,6 +30,7 @@ int main() {
             subArray.pushBack(sum);
             subArrays.pushBack(subArray);
         }
+        
         for (int i2 = i1 + 1; i2 < arr.size(); i2++) {
             sum += arr.get(i2);
             c++;

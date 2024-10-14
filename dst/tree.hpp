@@ -38,6 +38,7 @@ struct Tree {
 
     int depth(int value) {
         bool found = false;
+
         function<int(TreeNode*, int)> getDepth = [&getDepth, &found](TreeNode* node, int value) -> int {
             if (node == nullptr) {
                 return 0;
@@ -52,6 +53,7 @@ struct Tree {
                 return 1;
             }
         };
+        
         int depth = getDepth(head, value);
         if (!found) {
             return -1;

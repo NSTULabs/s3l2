@@ -41,6 +41,7 @@ int opPriority(char op) {
 int calculate(string line) {
     Stack<char> ops;
     Stack<int> nums;
+    
     for (int i = 0; i < line.length(); i++) {
         if (isdigit(line[i])) {
             int num = 0;
