@@ -41,6 +41,7 @@ int main() {
     cout << isIsomorphic("paper", "title") << endl; // true
     cout << isIsomorphic("fall", "redd") << endl; // true
     cout << isIsomorphic("mad", "odd") << endl; // false
+    cout << isIsomorphic("dad", "ada") << endl; // false
 
     return 0;
 }
